@@ -5,9 +5,11 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="./style.css" rel="stylesheet" />
+
 
   <title>Vite App</title>
+  <script type="module" crossorigin src="./assets/index-c8616c95.js"></script>
+  <link rel="stylesheet" href="./assets/index-e22d2403.css">
 </head>
 
 <body class="drawer drawer-end container-fluid h-full bg-base-100">
@@ -17,7 +19,8 @@
 
     <!-- ------------- NAV BAR  AREA--------------------- -->
     <div class="text-center bg-secondary p-4 rounded-b-xl">
-      <button class="button float-left btn btn-warning btn-md w-40" onClick="window.location.href=window.location.href" >RESET</button>
+      <button class="button float-left btn btn-warning btn-md w-40"
+        onClick="window.location.href=window.location.href">RESET</button>
       <span class="text-black font-serif font-light text-4xl">BLINK THE LED</span>
       <label for="my-drawer-4" class="drawer-button btn btn-primary btn-md float-right w-40">&#x2630; CODE</label>
     </div>
@@ -35,11 +38,11 @@
 
         <div id="theory">
           <h2 class="text-xl font-bold mt-8">Instructions</h2>
-          <ul class="list-disc ml-8 mt-4" >
+          <ul class="list-disc ml-8 mt-4">
             <li>Click on the components to start interacting it with in the connection area</li>
             <li>Hover over the rasberrypi connections to get informations about various connections pin </li>
-            <li>Double click on various connections points to make connections  </li>
-            <li>Double click on the empty space in the connection area to extend and bend wire connections  </li>
+            <li>Double click on various connections points to make connections </li>
+            <li>Double click on the empty space in the connection area to extend and bend wire connections </li>
           </ul>
 
           <div>
@@ -49,7 +52,7 @@
             </ul>
           </div>
 
-         </div>
+        </div>
       </div>
 
       <!------------------------ Information area ENDS --------------->
@@ -75,14 +78,16 @@
               <span class="card-title">Resistor</span>
             </div>
 
-           
+
 
           </div>
 
           <hr>
 
           <div id="svg" class="h-auto overflow-hidden m-4">
-            <span class="text-white bg-slate-600 font-serif font-light text-xl border border-solid border-black float-right text-center w-52 h-12 rounded-lg" id="displayInfo">CONNECTOR INFO</span>
+            <span
+              class="text-white bg-slate-600 font-serif font-light text-xl border border-solid border-black float-right text-center w-52 h-12 rounded-lg"
+              id="displayInfo">CONNECTOR INFO</span>
           </div>
         </div>
       </div>
@@ -98,7 +103,7 @@
   <div class="drawer-side">
     <label for="my-drawer-4" class="drawer-overlay">
     </label>
-    
+
     <pre contenteditable="false" spellcheck="false">
         <span>import time</span>
         <span>LED_PIN = <input name="ledPin" id="ledPin" placeholder="Enter the connected pin"></span>
@@ -115,12 +120,13 @@
       <button id="codeSubmit" class="btn btn-primary">Submit</button>
     </pre>
   </div>
-  
+
   <div class="fixed inset-0 items-center justify-center bg-gray-900 bg-opacity-75 hidden" id="errorBox">
     <div class="bg-red-500 p-8 rounded-lg shadow-lg">
       <h2 class="text-white text-2xl mb-4" id="errorHeading">Error!</h2>
       <p class="text-white" id="errorText">Sorry, an error has occurred.</p>
-      <button id="closeErrorBox" class="mt-4 px-4 py-2 bg-white text-red-500 font-semibold rounded-lg shadow-md hover:bg-red-500 hover:text-white">
+      <button id="closeErrorBox"
+        class="mt-4 px-4 py-2 bg-white text-red-500 font-semibold rounded-lg shadow-md hover:bg-red-500 hover:text-white">
         OK
       </button>
     </div>
@@ -130,6 +136,6 @@
 
 
 </body>
-<script type="module" src="/main.js"></script>
+
 
 </html>
