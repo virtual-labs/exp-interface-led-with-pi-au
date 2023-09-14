@@ -1,4 +1,3 @@
-### Theory
 Using the Raspberry Pi to control an LED may appear to be a simple or tedious operation. The same hardware and programming techniques used to drive an LED, however, may also be used to control a broad range of sensors and modules. One of the introductory circuits that helps one become acquainted with the GPIO pins of the Raspberry Pi is led flashing. In this case, we use Python to construct code that blinks an LED every two seconds.
 Components used in this experiment are – 
 
