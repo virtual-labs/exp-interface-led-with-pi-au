@@ -1,3 +1,4 @@
+### Procedure
 Hardware Setup – 
 
 1. Connect one wire between the Raspberry Pi's GND (ground) pin and the breadboard's blue line.
