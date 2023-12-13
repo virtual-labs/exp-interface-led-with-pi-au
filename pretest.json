@@ -1,0 +1,39 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": " What is a GPIO pin?",
+      "answers": {
+        "a": "General Purpose Input Output pin",
+        "b": "Gigabyte Pin Output"
+        
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How many GPIO pins are there?",
+      "answers": {
+        "a": "26",
+        "b": "40",
+        "c": "depends on a model",
+        "d": "always 33"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": " Can you supply power to Raspberry Pi via GPIO 5V pin?",
+      "answers": {
+        "a": "YES",
+        "b": "NO"
+       
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
