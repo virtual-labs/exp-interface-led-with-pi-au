@@ -3,58 +3,60 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
 
   <title>Vite App</title>
-  <script type="module" crossorigin src="./assets/index-ed9ffd85.js"></script>
-  <link rel="stylesheet" href="./assets/index-6b79e101.css">
+  <script type="module" crossorigin src="./js/index-bd3c3e38.js"></script>
+  <link rel="stylesheet" href="./css/index-ed00b78b.css">
 </head>
 
-<body class="drawer drawer-end container-fluid h-full bg-base-100" style="overflow-y: scroll;">
+<body class="drawer drawer-end container-fluid h-full bg-base-100" 
+>
   <!-- <div class="drawer drawer-end"> -->
   <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content">
 
     <!-- ------------- NAV BAR  AREA--------------------- -->
-    <div class="text-center bg-secondary p-4 rounded-b-xl">
-      <button class="button float-left btn btn-warning btn-md w-40" onClick="window.location.href=window.location.href" >RESET</button>
-      <span class="text-black font-serif font-light text-4xl">Raspberry Pi LED Blink </span>
-      <label for="my-drawer-4" class="drawer-button btn btn-primary btn-md float-right w-40">&#x2630; CODE</label>
-    </div>
+    
     <!-- --------------NAVBAR AREA  ENDS -------------------->
 
     <!-- Information Area -->
     <div class="flex flex-col sm:flex-row ">
-      <div class="w-1/3 m-5 hidden-scroll sm:block bg-base-200 p-6 ">    
+      <div class="w-1/3 m-5 hidden-scroll sm:block bg-base-200 p-6 ">
+        <div id="headline">
+         
+        </div>
 
-        <div id="theory">                    
-          <div class="mt-4">            
-              <ol class="pl-5 mt-5 mb-4 space-y-1 list-decimal list-inside text-xl font-semibold">                
-                <li>Make a connection between Rasberry Pi and Led's anode pin via any of the GPIO pins.</li>                
-                  <ul class="list-disc ml-8 mt-4">   
-                    <li> Examine the two pins on the LED. One is obviously shorter than the other. </li>                 
-                    <li>Double-click on any of the GPIO pins to start wiring.</li>
-                    <li>Make a clear path till the anode of the Led pin.</li>
-                    
-                    <li>Double-click on the anode of the led pin to complete the connection.Anode of the led pin <b><i>(longer)</i></b> AND cathode <b><i>(shorter)</i></b></li>
-                  </ul>
-                <li>The pin requires low voltage so put a resistor between the Rasberry Pi and Led</li>
-                  <ul class="list-disc ml-8 mt-4">                    
-                    <li>Double-click on the cathode pin  to start wiring between the resistor and led pin</li>   
-                    <li>Connect the other resistor's pin to any of the GND pins of Rasberry Pi to complete the wiring</li>                 
-                  </ul>                
-              </ol>
-                       
-            <h2 class="text-xl font-light mt-8">Circuit diagram</h2>    
-            <img src="./assets/connection_diagram_exp2.jpeg" alt="connetion_diagram">           
-          
+        <div id="theory">
+          <h2 class="text-xl font-bold mt-4">Instructions</h2>
+          <ul class="list-disc ml-8 mt-4" >
+            <li>Click on the components to start interacting it with in the connection area</li>
+            <li>Hover over the raspberry Pi connections to get informations about various connections pin </li>
+            <li>Double click on various connections points to make connections  </li>
+            <li>Double click on the empty space in the connection area to extend and bend wire connections  </li>
+          </ul>
+          <!-- Procedure -->
+          <h2 class="text-xl font-bold mt-8">How to Connect</h2>
+          <div class="mt-4">
+            <img src="./images/diagram.jpeg" alt="connetion_diagram">
           </div>
-          <ul class="list-disc font-light ml-8 mt-4" >
-          <ol>
+          <ol class="pl-5 mt-5 mb-4 space-y-1 list-decimal list-inside text-xl">
+            <li>Make a connection between Raspberry Pi and Led's anode pin via any of the GPIO pins.</li>
+              <ul class="list-disc ml-8 mt-4">
+                <li>Double-click on any of the GPIO pins to start wiring.</li>
+                <li>Make a clear path till the anode of the Led pin.</li>
+                <li>Double-click on the anode of the led pin to complete the connection</li>
+              </ul>
+            <li>The pin requires low voltage so put a resistor between the Raspberry Pi and Led</li>
+              <ul class="list-disc ml-8 mt-4">
+                <li>Double-click on the cathode to start wiring between the resistor and led pin</li>
+                <li>Choose any of the resistor pins to complete the wiring</li>
+              </ul>
+            <li>Connect the other resistor's pin to any of the GND pins of Raspberry Pi</li>
           </ol>
-        </ul>
+
           <div>
             <h2 class="text-xl font-bold mt-8">Connections Logs</h2>
             <ul class="list-disc ml-8 mt-4" id="connectionLog">
@@ -72,19 +74,37 @@
         <div class="h-full">
 
           <div id="components" class="components">
-
+            <label
+            for="my-drawer-4"
+            class="drawer-button btn btn-primary btn-md float-right w-40 m-4"
+            >&#x2630; CODE</label
+          >
+            <button
+              class="button float-right btn btn-warning btn-md w-40 m-4"
+              onClick="window.location.href=window.location.href"
+            >
+              RESET
+            </button>
+            <button
+            id="undoButton"
+            class=" float-right btn  btn-md w-40 m-4"
+           style="background-color: #3498db; border: none;"
+          >
+            UNDO
+          </button>
+         
             <div id="rasberryPi" class="component bg-slate-200 rounded-lg text-center">
-              <img src="./assets/pi3dirk.svg" class="w-20 h-20">
-              <span class="card-title">RasberryPi</span>
+              <img src="./images/pi3dirk.svg" class="w-20 h-20">
+              <span class="card-title">Raspberry Pi</span>
             </div>
 
             <div id="ledlight" class="component bg-slate-200 rounded-lg text-center">
-              <img src="./assets/led.svg" class="w-20 h-20">
+              <img src="./images/led.svg" class="w-20 h-20">
               <span class="card-title">Led bulb</span>
             </div>
 
             <div id="resistor" class="component bg-slate-200 rounded-lg text-center">
-              <img src="./assets/resistor.svg" class="w-20 h-20">
+              <img src="./images/resistor.svg" class="w-20 h-20">
               <span class="card-title">Resistor</span>
             </div>
 
