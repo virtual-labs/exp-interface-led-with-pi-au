@@ -1,8 +1,8 @@
 ### Procedure
 **Hardware Setup –**
 
-1. Updated the procedure with more clarity in Step 1: Examine the two pins on the LED. The longer pin is the positive (+ve) terminal (anode), and the shorter pin is the negative (-ve) terminal (cathode).
-2. Updated Step 2 to address the blue GND issue: Connect the shorter pin (negative, -ve) to the blue GND line (now shown and described in the simulator as a ground connection on the Raspberry Pi or breadboard), and the longer pin (positive, +ve) to any other connection.
+1. Examine the two pins on the LED. The longer pin is the positive (+ve) terminal (anode), and the shorter pin is the negative (-ve) terminal (cathode).
+2.  Connect the shorter pin (negative, -ve) to the GND line and the longer pin (positive, +ve) to any other connection.
 3. Connect one resistor pin to the same line as the longer LED pin (positive, +ve), and the other resistor pin to a separate line.
 4. Connect one wire between the same line as the other resistor pin and the GPIO number [17] to complete the circuit (more on Raspberry Pi pins and GPIOs).
 
