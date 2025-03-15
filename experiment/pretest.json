@@ -2,36 +2,38 @@
   "version": 2.0,
   "questions": [
     {
-      "question": " What is a GPIO pin?",
+      "question": "What is a GPIO pin?",
       "answers": {
         "a": "General Purpose Input Output pin",
         "b": "Gigabyte Pin Output"
-        
       },
-      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "How many GPIO pins are there?",
+      "question": "What is the purpose of connecting a resistor to an LED when blinking it with a Raspberry Pi?",
       "answers": {
-        "a": "26",
-        "b": "40",
-        "c": "depends on a model",
-        "d": "always 33"
+        "a": "To limit current and protect the LED and GPIO pin",
+        "b": "To increase the brightness of the LED"
       },
-      
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": " Can you supply power to Raspberry Pi via GPIO 5V pin?",
+      "question": "Can you supply power to Raspberry Pi via GPIO 5V pin?",
       "answers": {
         "a": "YES",
         "b": "NO"
-       
       },
-      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What should you do before connecting hardware components to a Raspberry Pi?",
+      "answers": {
+        "a": "Ensure the Raspberry Pi is turned off",
+        "b": "Keep the Raspberry Pi powered on"
+      },
       "correctAnswer": "a",
       "difficulty": "beginner"
     }
