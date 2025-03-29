@@ -1,0 +1,2 @@
+### Aim of the experiment
+To interface an LED with a Raspberry Pi to turn the LED ON for 1 second every 2 seconds, this experiment demonstrates basic GPIO pin control and timing using the Raspberry Pi, providing a foundation for applications such as status indicators (for example, signaling device activity), simple timers (for example, visual countdowns), and educational tools for learning embedded programming.
