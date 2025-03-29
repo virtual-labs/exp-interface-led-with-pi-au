@@ -29,6 +29,7 @@
          
         </div>
 
+        
         <div id="theory">
           <h2 class="text-xl font-bold mt-4">Instructions</h2>
           <ul class="list-disc ml-8 mt-4" >
@@ -43,18 +44,20 @@
             <img src="./images/diagram.jpeg" alt="connetion_diagram">
           </div>
           <ol class="pl-5 mt-5 mb-4 space-y-1 list-decimal list-inside text-xl">
-            <li>Make a connection between Raspberry Pi and Led's anode pin via any of the GPIO pins.</li>
-              <ul class="list-disc ml-8 mt-4">
-                <li>Double-click on any of the GPIO pins to start wiring.</li>
-                <li>Make a clear path till the anode of the Led pin.</li>
-                <li>Double-click on the anode of the led pin to complete the connection</li>
-              </ul>
-            <li>The pin requires low voltage so put a resistor between the Raspberry Pi and Led</li>
-              <ul class="list-disc ml-8 mt-4">
-                <li>Double-click on the cathode to start wiring between the resistor and led pin</li>
-                <li>Choose any of the resistor pins to complete the wiring</li>
-              </ul>
-            <li>Connect the other resistor's pin to any of the GND pins of Raspberry Pi</li>
+            <li>Connect the LED’s anode (longer leg, positive side) to any GPIO pin on the Raspberry Pi using a wire.</li>
+            <ul class="list-disc ml-8 mt-4">
+              <!-- <li>Double-click on any of the GPIO pins to start wiring.</li>
+              <li>Make a clear path till the anode of the Led pin.</li>
+              <li>Double-click on the anode of the led pin to complete the connection</li> -->
+            </ul>
+          <li>Connect one end of a resistor to the LED’s anode (longer leg, positive side).</li>
+            <!-- <ul class="list-disc ml-8 mt-4">
+              <li>Double-click on the cathode to start wiring between the resistor and led pin</li>
+              <li>Choose any of the resistor pins to complete the wiring</li>
+            </ul> -->
+          <li>Connect the LED’s cathode (shorter leg, negative side) to a GND pin on the Raspberry Pi with a wire.</li>
+                    <li>Enter the GPIO pin number to the code section. The code section can be opened by clicking the Code button on the right upper side of the simulation area.</li>
+        
           </ol>
 
           <div>
