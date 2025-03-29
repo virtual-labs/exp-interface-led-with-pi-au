@@ -5,7 +5,9 @@
       "question": "What is a GPIO pin?",
       "answers": {
         "a": "General Purpose Input Output pin",
-        "b": "Gigabyte Pin Output"
+        "b": "Gigabyte Pin Output",
+        "c": "Ground Power Input pin",
+        "d": "General Processor Input Only pin"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -14,16 +16,20 @@
       "question": "What is the purpose of connecting a resistor to an LED when blinking it with a Raspberry Pi?",
       "answers": {
         "a": "To limit current and protect the LED and GPIO pin",
-        "b": "To increase the brightness of the LED"
+        "b": "To increase the brightness of the LED",
+        "c": "To stabilize the voltage supply",
+        "d": "To reduce the blinking speed"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Can you supply power to Raspberry Pi via GPIO 5V pin?",
+      "question": "How can power be supplied to the Raspberry Pi in this experiment?",
       "answers": {
-        "a": "YES",
-        "b": "NO"
+        "a": "Via the GPIO 5V pin",
+        "b": "Via the GND pin only",
+        "c": "Via the 3.3V pin only",
+        "d": "Via the USB port exclusively"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -32,9 +38,33 @@
       "question": "What should you do before connecting hardware components to a Raspberry Pi?",
       "answers": {
         "a": "Ensure the Raspberry Pi is turned off",
-        "b": "Keep the Raspberry Pi powered on"
+        "b": "Keep the Raspberry Pi powered on",
+        "c": "Increase the voltage to 5V",
+        "d": "Disconnect the GND pin"
       },
       "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How many programmable GPIO pins are available on the Raspberry Pi 3 Model B?",
+      "answers": {
+        "a": "40",
+        "b": "26",
+        "c": "17",
+        "d": "8"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In the experiment, what voltage does the GPIO pin output to turn the LED on?",
+      "answers": {
+        "a": "5V",
+        "b": "3.3V",
+        "c": "0V",
+        "d": "12V"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
