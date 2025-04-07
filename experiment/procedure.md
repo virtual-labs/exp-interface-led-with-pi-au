@@ -1,39 +1,57 @@
-### Procedure
-**Hardware Setup –**
+### Procedure 
 
-1. Examine the two pins on the LED. The longer pin is the positive (+ve) terminal (anode), and the shorter pin is the negative (-ve) terminal (cathode).
-2.  Connect the shorter pin (negative, -ve) to the GND line and the longer pin (positive, +ve) to any other connection.
-3. Connect one resistor pin to the same line as the longer LED pin (positive, +ve), and the other resistor pin to a separate line.
-4. Connect one wire between the same line as the other resistor pin and the GPIO number [17] to complete the circuit (more on Raspberry Pi pins and GPIOs).
+#### Hardware Setup
+1. Identify the two pins of the LED:
+   - The longer pin is the positive terminal (anode).
+   - The shorter pin is the negative terminal (cathode).
+2. Connect the negative terminal (shorter pin) to the Ground (GND) pin of the Raspberry Pi.
+3. Connect the positive terminal (longer pin) to a separate line on the breadboard.
+4. Attach one end of a resistor to the same line as the positive LED terminal.
+5.Link the other end of the resistor to any GND pin on the Raspberry Pi.
 
-**Software Setup –**
+#### Software Setup
 
-1. **Control the LED with Python 3 on Raspberry Pi OS –**
-   - Now that the hardware and software are properly configured, we can begin controlling the LED on the Raspberry Pi with Python3.
-   - This programme will turn on the LED for one second before turning it off.
-   - First, we import the RPi.GPIO Python module, which allows us to control all GPIOs on the Raspberry Pi through the GPIO header.
-   - We also include the time module, which will be used later to wait 2 seconds.
-   - Create a "constant" global variable with the LED's GPIO number. This allows you to utilise the variable name rather than the number directly. It will produce fewer errors.
-   - Use the RPi.GPIO module to execute. This allows you to utilise GPIO numbers rather than "normal" pin numbers.
-   - Setting up the GPIO for the LED needs to use the GPIO.setup() function and provide the mode of the GPIO: either GPIO.OUT for output, or GPIO.IN for input.
-2. **Make the LED blink –**
-   - The configuration is the same.
-   - Then, in an infinite loop, we simply switch between GPIO.HIGH and GPIO.LOW every second.
-   - Because of the endless loop, the loop does not exit on its own.
-   - As a result, you must stop/kill the application manually, either by selecting the "stop" button on Thonny IDE or by typing CTRL+C in the shell panel.
+##### 1. Controlling the LED with Python 3 on Raspberry Pi OS
+Once the hardware is set up, the LED can be controlled using Python 3. The following process enables LED control:
 
-3. **Python Code –**
+- Import the RPi.GPIO module, which provides access to the GPIO pins.
+- Import the time module to introduce time delays in execution.
+- Define a global constant for the LED's GPIO number to improve code readability and reduce errors.
+- Configure the Raspberry Pi to use GPIO numbers instead of physical pin numbers.
+- Set up the GPIO pin as an output using GPIO.setup().
 
-       import RPi.GPIO as GPIO
-       import time
-       LED_PIN = 17
-       GPIO.setmode(GPIO.BCM)
-       GPIO.setup(LED_PIN, GPIO.OUT)
-       try:
-           while True:
-               GPIO.output(LED_PIN, GPIO.HIGH)
-               time.sleep(1)
-               GPIO.output(LED_PIN, GPIO.LOW)
-               time.sleep(2)
-       except KeyboardInterrupt:
-           GPIO.cleanup()
+##### 2. Making the LED Blink
+- Maintain the same GPIO configuration.
+- Implement an infinite loop that toggles the LED on and off at set intervals.
+- The LED remains ON for 1 second and OFF for 2 seconds.
+- The loop runs indefinitely until manually interrupted using either the stop button in the Thonny IDE or CTRL+C in the terminal.
+
+#### Python Code Implementation
+
+```python
+import RPi.GPIO as GPIO
+import time
+
+# Define the GPIO pin number for the LED
+LED_PIN = 17
+
+# Set the GPIO mode to BCM (Broadcom pin-numbering scheme)
+GPIO.setmode(GPIO.BCM)
+
+# Set up the LED pin as an output
+GPIO.setup(LED_PIN, GPIO.OUT)
+
+try:
+    while True:
+        # Turn the LED on (HIGH state)
+        GPIO.output(LED_PIN, GPIO.HIGH)
+        time.sleep(1)  # Wait for 1 second
+
+        # Turn the LED off (LOW state)
+        GPIO.output(LED_PIN, GPIO.LOW)
+        time.sleep(2)  # Wait for 2 seconds
+
+except KeyboardInterrupt:
+    # Clean up GPIO settings when exiting the program
+    GPIO.cleanup()
+```

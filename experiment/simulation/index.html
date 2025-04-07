@@ -1,171 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-
-  <title>Vite App</title>
-  <script type="module" crossorigin src="./js/index-bd3c3e38.js"></script>
-  <link rel="stylesheet" href="./css/index-ed00b78b.css">
-</head>
-
-<body class="drawer drawer-end container-fluid h-full bg-base-100" 
->
-  <!-- <div class="drawer drawer-end"> -->
-  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-  <div class="drawer-content">
-
-    <!-- ------------- NAV BAR  AREA--------------------- -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- --------------NAVBAR AREA  ENDS -------------------->
+    <title>Vite App</title>
+    <script type="module" crossorigin src="js/index-90dd22c1.js"></script>
+    <link rel="stylesheet" href="css/index-e64517c0.css">
+  </head>
 
-    <!-- Information Area -->
-    <div class="flex flex-col sm:flex-row ">
-      <div class="w-1/3 m-5 hidden-scroll sm:block bg-base-200 p-6 ">
-        <div id="headline">
-         
-        </div>
-
-        
-        <div id="theory">
-          <h2 class="text-xl font-bold mt-4">Instructions</h2>
-          <ul class="list-disc ml-8 mt-4" >
-            <li>Click on the components to start interacting it with in the connection area</li>
-            <li>Hover over the raspberry Pi connections to get informations about various connections pin </li>
-            <li>Double click on various connections points to make connections  </li>
-            <li>Double click on the empty space in the connection area to extend and bend wire connections  </li>
-          </ul>
-          <!-- Procedure -->
-          <h2 class="text-xl font-bold mt-8">How to Connect</h2>
-          <div class="mt-4">
-            <img src="./images/diagram.jpeg" alt="connetion_diagram">
-          </div>
-          <ol class="pl-5 mt-5 mb-4 space-y-1 list-decimal list-inside text-xl">
-            <li>Connect the LED’s anode (longer leg, positive side) to any GPIO pin on the Raspberry Pi using a wire.</li>
+  <body class="drawer drawer-end container-fluid h-full bg-base-100">
+    <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
+      <!-- Information Area -->
+      <div class="flex flex-col sm:flex-row">
+        <div class="w-1/3 m-5 hidden-scroll sm:block bg-base-200 p-6">
+          <div id="headline"></div>
+          <div id="theory">
+            <h2 class="text-xl font-bold mt-4">Instructions</h2>
             <ul class="list-disc ml-8 mt-4">
-              <!-- <li>Double-click on any of the GPIO pins to start wiring.</li>
-              <li>Make a clear path till the anode of the Led pin.</li>
-              <li>Double-click on the anode of the led pin to complete the connection</li> -->
+              <li>
+                Click on the components to start interacting with them in the
+                connection area
+              </li>
+              <li>
+                Hover over the Raspberry Pi connections to get information about
+                various connection pins
+              </li>
+              <li>
+                Double click on various connection points to make connections
+              </li>
+              <li>
+                Double click on empty space in the connection area to extend and
+                bend wire connections
+              </li>
             </ul>
-          <li>Connect one end of a resistor to the LED’s anode (longer leg, positive side).</li>
-            <!-- <ul class="list-disc ml-8 mt-4">
-              <li>Double-click on the cathode to start wiring between the resistor and led pin</li>
-              <li>Choose any of the resistor pins to complete the wiring</li>
-            </ul> -->
-          <li>Connect the LED’s cathode (shorter leg, negative side) to a GND pin on the Raspberry Pi with a wire.</li>
-                    <li>Enter the GPIO pin number to the code section. The code section can be opened by clicking the Code button on the right upper side of the simulation area.</li>
-        
-          </ol>
-
-          <div>
-            <h2 class="text-xl font-bold mt-8">Connections Logs</h2>
-            <ul class="list-disc ml-8 mt-4" id="connectionLog">
-
-            </ul>
-          </div>
-
-         </div>
-      </div>
-
-      <!------------------------ Information area ENDS --------------->
-
-      <!----------------------------- Components---------------------------------- -->
-      <div class="sm:w-2/3 h-screen">
-        <div class="h-full">
-
-          <div id="components" class="components">
-            <label
-            for="my-drawer-4"
-            class="drawer-button btn btn-primary btn-md float-right w-40 m-4"
-            >&#x2630; CODE</label
-          >
-            <button
-              class="button float-right btn btn-warning btn-md w-40 m-4"
-              onClick="window.location.href=window.location.href"
+            <!-- Procedure -->
+            <h2 class="text-xl font-bold mt-8">How to Connect</h2>
+            <div class="mt-4">
+              <img src="images/diagram.jpeg" alt="connection_diagram" />
+            </div>
+            <ol
+              class="pl-5 mt-5 mb-4 space-y-1 list-decimal list-inside text-xl"
             >
-              RESET
-            </button>
-            <button
-            id="undoButton"
-            class=" float-right btn  btn-md w-40 m-4"
-           style="background-color: #3498db; border: none;"
-          >
-            UNDO
-          </button>
-         
-            <div id="rasberryPi" class="component bg-slate-200 rounded-lg text-center">
-              <img src="./images/pi3dirk.svg" class="w-20 h-20">
-              <span class="card-title">Raspberry Pi</span>
+              <li>
+                Connect a wire from any GPIO pin on the Raspberry Pi to the
+                anode (longer, positive leg) of the LED.
+              </li>
+              <li>
+                Attach one end of a resistor to the cathode (shorter, negative
+                leg) of the LED.
+              </li>
+              <li>
+                Link the other end of the resistor to any GND pin on the
+                Raspberry Pi.
+              </li>
+              <li>
+                After completing the circuit connection, click the "Code"
+                button, submit the code by entering the corresponding pin
+                number, and observe the circuit’s operation.
+              </li>
+            </ol>
+            <div>
+              <h2 class="text-xl font-bold mt-8">Connections Logs</h2>
+              <ul class="list-disc ml-8 mt-4" id="connectionLog"></ul>
             </div>
-
-            <div id="ledlight" class="component bg-slate-200 rounded-lg text-center">
-              <img src="./images/led.svg" class="w-20 h-20">
-              <span class="card-title">Led bulb</span>
-            </div>
-
-            <div id="resistor" class="component bg-slate-200 rounded-lg text-center">
-              <img src="./images/resistor.svg" class="w-20 h-20">
-              <span class="card-title">Resistor</span>
-            </div>
-
-           
-
           </div>
+        </div>
 
-          <hr>
-
-          <div id="svg" class="h-auto overflow-hidden m-4">
-            <span class="text-white bg-slate-600 font-serif font-light text-xl border border-solid border-black float-right text-center w-52 h-12 rounded-lg" id="displayInfo">CONNECTOR INFO</span>
+        <!-- Components -->
+        <div class="sm:w-2/3 h-screen">
+          <div class="h-full">
+            <div id="components" class="components">
+              <label for="my-drawer-4" class="drawer-button btn btn-primary btn-md float-right w-40 m-4">☰ CODE</label>
+              <button class="button float-right btn btn-warning btn-md w-40 m-4" onClick="window.location.href=window.location.href">RESET</button>
+              <button id="undoButton" class="float-right btn btn-md w-40 m-4" style="background-color: #3498db; border: none;">UNDO</button>
+              
+              <div id="rasberryPi" class="component bg-slate-200 rounded-lg text-center">
+                <img src="images/pi3dirk.svg" class="w-20 h-20">
+                <span class="card-title">Raspberry Pi</span>
+              </div>
+  
+              <div id="ledlight" class="component bg-slate-200 rounded-lg text-center">
+                <img src="images/led.svg" class="w-20 h-20">
+                <span class="card-title">Led bulb</span>
+              </div>
+  
+              <div id="resistor" class="component bg-slate-200 rounded-lg text-center">
+                <img src="images/resistor.svg" class="w-20 h-20">
+                <span class="card-title">Resistor</span>
+              </div>
+            </div>
+            
+            <!-- Moved and styled description area -->
+            <div id="componentDescription" class="text-sm text-gray-700 mt-2 p-2 bg-gray-100 rounded-lg" style="display: none; width: 100%; max-width: 600px; margin-left: 1rem;">
+              Hover over a component to see its description.
+            </div>
+  
+            <hr>
+           
+              <div id="svg" class="h-auto overflow-hidden m-4" style="margin-top: 4rem;">
+                <span class="text-white bg-slate-600 font-serif font-light text-xl border border-solid border-black float-right text-center w-52 h-12 rounded-lg" id="displayInfo">CONNECTOR INFO</span>
+              </div>            </div>
           </div>
         </div>
       </div>
-
-
-      <!------------------- Component ENDS= ----------------- -->
-
     </div>
-  </div>
 
-
-  <!---------------------- Coding Area ------------------------->
-  <div class="drawer-side">
-    <label for="my-drawer-4" class="drawer-overlay">
-    </label>
+    <!-- Coding Area -->
+ <div class="drawer-side">
+  <label for="my-drawer-4" class="drawer-overlay"></label>
+  <pre contenteditable="false" spellcheck="false">
+    <span>import time</span>
+    <span>LED_PIN = <input name="ledPin" id="ledPin" placeholder="Enter the connected pin"></span>
+    <span>GPIO.setmode(GPIO.BCM)</span>
+    <span>GPIO.setup(LED_PIN, GPIO.OUT)</span>
+    <span>LED_COLOR = </span><select name="ledColor" id="ledColor" style="background-color: #fff; color: #000; border: 1px solid #000; padding: 2px; font-size: 14px;">
+      <option value="red" style="color: black">Red</option>
+      <option value="green" style="color: black">Green</option>
+      <option value="blue" style="color: black">Blue</option>
+      <option value="yellow" style="color: black;">Yellow</option>
+    </select>
+    <span>try:</span>
+    <span>GPIO.output(LED_PIN, GPIO.HIGH)</span>
+    <span>time.sleep( <input name="blinkTime" type="number" id="blinkTime" placeholder="Enter Sleep Time (seconds)"> )</span>
+    <span>GPIO.output(LED_PIN, GPIO.LOW)</span>
+    <span>time.sleep( <input name="waitTime" type="number" id="waitTime" placeholder="Enter Sleep Time (seconds)">)</span>
+    <span>except KeyboardInterrupt:</span>
+    <span>GPIO.cleanup()</span>
     
-    <pre contenteditable="false" spellcheck="false">
-        <span>import time</span>
-        <span>LED_PIN = <input name="ledPin" id="ledPin" placeholder="Enter the connected pin"></span>
-        <span>GPIO.setmode(GPIO.BCM)</span>
-        <span>GPIO.setup(LED_PIN, GPIO.OUT)</span>
-        <span>try:</span>
-        <span>GPIO.output(LED_PIN, GPIO.HIGH)</span>
-        <span>time.sleep( <input name="blinkTime" type="number" id="blinkTime" placeholder="Enter Sleep Time"> )</span>
-        <span>GPIO.output(LED_PIN, GPIO.LOW)</span>
-        <span>time.sleep( <input name="waitTime" type="number" id="waitTime" placeholder="Enter Sleep Time">)</span>
-        <span>except KeyboardInterrupt:</span>
-        <span>GPIO.cleanup()</span>
+  <button id="codeSubmit" class="btn btn-primary">Submit</button>
+</div>
 
-      <button id="codeSubmit" class="btn btn-primary">Submit</button>
-    </pre>
-  </div>
-  
-  <div class="fixed inset-0 items-center justify-center bg-gray-900 bg-opacity-75 hidden" id="errorBox">
-    <div class="bg-red-500 p-8 rounded-lg shadow-lg">
-      <h2 class="text-white text-2xl mb-4" id="errorHeading">Error!</h2>
-      <p class="text-white" id="errorText">Sorry, an error has occurred.</p>
-      <button id="closeErrorBox" class="mt-4 px-4 py-2 bg-white text-red-500 font-semibold rounded-lg shadow-md hover:bg-red-500 hover:text-white">
-        OK
-      </button>
+    <!-- Error Box -->
+    <div
+      class="fixed inset-0 items-center justify-center bg-gray-900 bg-opacity-75 hidden"
+      id="errorBox"
+    >
+      <div class="bg-red-500 p-8 rounded-lg shadow-lg">
+        <h2 class="text-white text-2xl mb-4" id="errorHeading">Error!</h2>
+        <p class="text-white" id="errorText">Sorry, an error has occurred.</p>
+        <button
+          id="closeErrorBox"
+          class="mt-4 px-4 py-2 bg-white text-red-500 font-semibold rounded-lg shadow-md hover:bg-red-500 hover:text-white"
+        >
+          OK
+        </button>
+      </div>
     </div>
-  </div>
-
-
-
-
-</body>
-
-
+  </body>
+  
 </html>

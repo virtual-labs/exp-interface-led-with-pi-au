@@ -2,27 +2,69 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What will happen if Resistor is not used?",
+      "question": "What could happen if a resistor is not used in the circuit?",
       "answers": {
-        "a": "Excessive current might damage the Raspberry Pi or burn out the LED",
-        "b": "If an excessive amount of electricity is transmitted, nothing will happen to the Raspberry Pi or the LED",
-        "c": "If too much electricity is put through, the Raspberry Pi and LED will cease operating after a while.",
-        "d": "Excess current has no effect on the Raspberry Pi; however, the LED will cease operating."
+        "a": "Excessive current could damage the Raspberry Pi or burn out the LED",
+        "b": "No impact on the Raspberry Pi or LED, even if excessive current is passed",
+        "c": "Over time, the Raspberry Pi and LED may cease to function if too much current flows through them",
+        "d": "Excessive current has no effect on the Raspberry Pi, but the LED will stop functioning"
       },
-      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "For setting up GPIO for LED, What command did we use ?",
+      "question": "Which GPIO command is used to set up a pin for use with an LED?",
       "answers": {
         "a": "GPIO.output",
         "b": "GPIO.setmode",
         "c": "GPIO.setup",
         "d": "GPIO.output"
       },
-      
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the primary function of a GPIO pin on a Raspberry Pi?",
+      "answers": {
+        "a": "To provide power to peripherals",
+        "b": "To send and receive digital signals for controlling devices",
+        "c": "To supply analog signals for sensors",
+        "d": "To connect the Raspberry Pi to external storage"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is it necessary to turn off the Raspberry Pi before connecting hardware?",
+      "answers": {
+        "a": "To avoid damaging the components due to static discharge or short circuits",
+        "b": "To prevent data loss on the Raspberry Pi",
+        "c": "To ensure that the GPIO pins are not sending signals during the connection",
+        "d": "None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How many GPIO pins are available on the Raspberry Pi 3 Model B?",
+      "answers": {
+        "a": "40",
+        "b": "26",
+        "c": "17",
+        "d": "8"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What voltage does a GPIO pin output when turning an LED on?",
+      "answers": {
+        "a": "5V",
+        "b": "3.3V",
+        "c": "0V",
+        "d": "12V"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
