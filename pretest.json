@@ -1,0 +1,71 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What does GPIO stand for in the context of the Raspberry Pi?",
+      "answers": {
+        "a": "General Purpose Input/Output",
+        "b": "Gigabyte Pin Output",
+        "c": "Ground Power Input",
+        "d": "General Processor Input Only"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is it necessary to use a resistor when connecting an LED to a Raspberry Pi?",
+      "answers": {
+        "a": "To limit the current and protect both the LED and the GPIO pin",
+        "b": "To enhance the brightness of the LED",
+        "c": "To stabilize the voltage supplied to the LED",
+        "d": "To slow down the blinking rate of the LED"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What are the possible power sources for the Raspberry Pi during this experiment?",
+      "answers": {
+        "a": "The 5V GPIO pin",
+        "b": "Only the GND pin",
+        "c": "The 3.3V GPIO pin",
+        "d": "The USB port"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What precaution should be taken before connecting hardware to a Raspberry Pi?",
+      "answers": {
+        "a": "Ensure the Raspberry Pi is powered off",
+        "b": "Keep the Raspberry Pi powered on",
+        "c": "Increase the power supply to 5V",
+        "d": "Disconnect the GND pin"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How many total GPIO pins are available on the Raspberry Pi 3 Model B for programming?",
+      "answers": {
+        "a": "40",
+        "b": "26",
+        "c": "17",
+        "d": "8"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the output voltage of the GPIO pin when turning an LED on in this experiment?",
+      "answers": {
+        "a": "5V",
+        "b": "3.3V",
+        "c": "0V",
+        "d": "12V"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
