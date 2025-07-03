@@ -2941,7 +2941,7 @@ const Vo = (t) => {
       window.innerHeight - document.getElementById("svg").offsetTop
     )
     .attr("width", document.getElementById("svg").offsetWidth),
-  zo = new jt("raspberry", T, "Images/pi3dirk.svg", 1, !1),
+  zo = new jt("raspberry", T, "images/pi3dirk.svg", 1, !1),
   Uo = new jt(
     "resistorComponent",
     T,
