@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>Vite App</title>
-    <script type="module" crossorigin src="js/index-388ad5c4.js"></script>
+    <script type="module" crossorigin src="js/index-1d4082be.js"></script>
     <link rel="stylesheet" href="css/index-88c92385.css">
   </head>
 
@@ -15,61 +15,51 @@
     <div class="drawer-content">
       <!-- Information Area -->
       <div class="flex flex-col sm:flex-row">
-        <div class="w-1/3 m-5 hidden-scroll sm:block bg-base-200 p-6">
-          <div id="headline"></div>
-          <div id="theory">
-            <h2 class="text-xl font-bold mt-4">Instructions</h2>
-            <ul class="list-disc ml-8 mt-4">
-              <li>
-                Click on the components to start interacting with them in the
-                connection area
-              </li>
-              <li>
-                Hover over the Raspberry Pi connections to get information about
-                various connection pins
-              </li>
-              <li>
-                Double click on various connection points to make connections
-              </li>
-              <li>
-                Double click on empty space in the connection area to extend and
-                bend wire connections
-              </li>
-            </ul>
-            <!-- Procedure -->
-            <h2 class="text-xl font-bold mt-8">How to Connect</h2>
-            <div class="mt-4">
-              <img src="images/diagram.jpeg" alt="connection_diagram" />
-            </div>
-            <ol
-              class="pl-5 mt-5 mb-4 space-y-1 list-decimal list-inside text-xl"
-            >
-              <li>
-                Connect a wire from any GPIO pin on the Raspberry Pi to the
-                anode (longer, positive leg) of the LED.
-              </li>
-              <li>
-                Attach one end of a resistor to the cathode (shorter, negative
-                leg) of the LED.
-              </li>
-              <li>
-                Link the other end of the resistor to any GND pin on the
-                Raspberry Pi.
-              </li>
-              <li>
-                After completing the circuit connection, click the "Code"
-                button, submit the code by entering the corresponding pin
-                number, and observe the circuit’s operation.
-              </li>
-            </ol>
-            <div>
-              <h2 class="text-xl font-bold mt-8">Connections Logs</h2>
-              <ul class="list-disc ml-8 mt-4" id="connectionLog"></ul>
-            </div>
+       <div class="w-1/3 m-5 hidden-scroll sm:block bg-base-200 p-6">
+  <div id="headline"></div>
+  <button id="infoButton" class="btn btn-circle btn-sm bg-blue-500 text-white hover:bg-blue-600 mb-4" style="text-transform: lowercase; float: right;">i</button>
+  <div id="instructionsContainer" class="hidden">
+    <h2 class="text-xl font-bold mt-4">Instructions</h2>
+    <ul class="list-disc ml-8 mt-4">
+      <li>Click on the components to start interacting with them in the connection area</li>
+      <li>Hover over the Raspberry Pi connections to get information about various connection pins</li>
+      <li>Double click on various connection points to make connections</li>
+      <li>Double click on empty space in the connection area to extend and bend wire connections</li>
+    </ul>
+  </div>
+          <!-- Procedure (unchanged, remains visible) -->
+          <h2 class="text-xl font-bold mt-8">How to Connect</h2>
+          <div class="mt-4">
+            <img src="images/diagram.jpeg" alt="connection_diagram" />
+          </div>
+          <ol
+            class="pl-5 mt-5 mb-4 space-y-1 list-decimal list-inside text-xl"
+          >
+            <li>
+              Connect a wire from any GPIO pin on the Raspberry Pi to the
+              anode (longer, positive leg) of the LED.
+            </li>
+            <li>
+              Attach one end of a resistor to the cathode (shorter, negative
+              leg) of the LED.
+            </li>
+            <li>
+              Link the other end of the resistor to any GND pin on the
+              Raspberry Pi.
+            </li>
+            <li>
+              After completing the circuit connection, click the "Code"
+              button, submit the code by entering the corresponding pin
+              number, and observe the circuit’s operation.
+            </li>
+          </ol>
+          <div>
+            <h2 class="text-xl font-bold mt-8">Connections Logs</h2>
+            <ul class="list-disc ml-8 mt-4" id="connectionLog"></ul>
           </div>
         </div>
 
-        <!-- Components -->
+        <!-- Components (unchanged) -->
         <div class="sm:w-2/3 h-screen">
           <div class="h-full">
             <div id="components" class="components">
@@ -111,7 +101,7 @@
       </div>
     </div>
 
-    <!-- Coding Area -->
+    <!-- Coding Area (unchanged) -->
     <div class="drawer-side">
       <label for="my-drawer-4" class="drawer-overlay"></label>
       <pre contenteditable="false" spellcheck="false">
@@ -130,14 +120,14 @@
         <span>time.sleep( <input name="blinkTime" type="number" id="blinkTime" placeholder="Enter Sleep Time (seconds)"> )</span>
         <span>GPIO.output(LED_PIN, GPIO.LOW)</span>
         <span>time.sleep( <input name="waitTime" type="number" id="waitTime" placeholder="Enter Sleep Time (seconds)">)</span>
-        <span>except KeyboardInterrupt:</span>
+        <span>except           <span>except KeyboardInterrupt:</span>
         <span>GPIO.cleanup()</span>
         
         <button id="codeSubmit" class="btn btn-primary">Submit</button>
       </pre>
     </div>
 
-    <!-- Error Box -->
+    <!-- Error Box (unchanged) -->
     <div
       class="fixed inset-0 items-center justify-center bg-gray-900 bg-opacity-75 hidden"
       id="errorBox"
@@ -153,6 +143,14 @@
         </button>
       </div>
     </div>
+
+    <script>
+      // Toggle instructions visibility when info button is clicked
+      document.getElementById('infoButton').addEventListener('click', () => {
+        const instructions = document.getElementById('instructionsContainer');
+        instructions.classList.toggle('hidden');
+      });
+    </script>
   </body>
   
 </html>
