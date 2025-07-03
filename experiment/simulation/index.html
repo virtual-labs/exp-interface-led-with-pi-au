@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>Vite App</title>
-    <script type="module" crossorigin src="js/index-90dd22c1.js"></script>
-    <link rel="stylesheet" href="css/index-e64517c0.css">
+    <script type="module" crossorigin src="js/index-388ad5c4.js"></script>
+    <link rel="stylesheet" href="css/index-88c92385.css">
   </head>
 
   <body class="drawer drawer-end container-fluid h-full bg-base-100">
@@ -93,45 +93,49 @@
               </div>
             </div>
             
-            <!-- Moved and styled description area -->
             <div id="componentDescription" class="text-sm text-gray-700 mt-2 p-2 bg-gray-100 rounded-lg" style="display: none; width: 100%; max-width: 600px; margin-left: 1rem;">
               Hover over a component to see its description.
             </div>
   
             <hr>
            
-              <div id="svg" class="h-auto overflow-hidden m-4" style="margin-top: 4rem;">
-                <span class="text-white bg-slate-600 font-serif font-light text-xl border border-solid border-black float-right text-center w-52 h-12 rounded-lg" id="displayInfo">CONNECTOR INFO</span>
-              </div>            </div>
+            <div id="svg" class="h-auto overflow-hidden m-4 relative" style="margin-top: 4rem;">
+              <span class="text-white bg-slate-600 font-serif font-light text-xl border border-solid border-black float-right text-center w-52 h-12 rounded-lg" id="displayInfo">CONNECTOR INFO</span>
+              <!-- Success message div positioned relative to resistor -->
+              <div id="successMessage" class="text-base font-semibold text-white bg-green-600 p-3 rounded-xl shadow-xl absolute max-w-xs" style="display: none;">
+                LED is blinking successfully!
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Coding Area -->
- <div class="drawer-side">
-  <label for="my-drawer-4" class="drawer-overlay"></label>
-  <pre contenteditable="false" spellcheck="false">
-    <span>import time</span>
-    <span>LED_PIN = <input name="ledPin" id="ledPin" placeholder="Enter the connected pin"></span>
-    <span>GPIO.setmode(GPIO.BCM)</span>
-    <span>GPIO.setup(LED_PIN, GPIO.OUT)</span>
-    <span>LED_COLOR = </span><select name="ledColor" id="ledColor" style="background-color: #fff; color: #000; border: 1px solid #000; padding: 2px; font-size: 14px;">
-      <option value="red" style="color: black">Red</option>
-      <option value="green" style="color: black">Green</option>
-      <option value="blue" style="color: black">Blue</option>
-      <option value="yellow" style="color: black;">Yellow</option>
-    </select>
-    <span>try:</span>
-    <span>GPIO.output(LED_PIN, GPIO.HIGH)</span>
-    <span>time.sleep( <input name="blinkTime" type="number" id="blinkTime" placeholder="Enter Sleep Time (seconds)"> )</span>
-    <span>GPIO.output(LED_PIN, GPIO.LOW)</span>
-    <span>time.sleep( <input name="waitTime" type="number" id="waitTime" placeholder="Enter Sleep Time (seconds)">)</span>
-    <span>except KeyboardInterrupt:</span>
-    <span>GPIO.cleanup()</span>
-    
-  <button id="codeSubmit" class="btn btn-primary">Submit</button>
-</div>
+    <div class="drawer-side">
+      <label for="my-drawer-4" class="drawer-overlay"></label>
+      <pre contenteditable="false" spellcheck="false">
+        <span>import time</span>
+        <span>LED_PIN = <input name="ledPin" id="ledPin" placeholder="Enter the connected pin"></span>
+        <span>GPIO.setmode(GPIO.BCM)</span>
+        <span>GPIO.setup(LED_PIN, GPIO.OUT)</span>
+        <span>LED_COLOR = </span><select name="ledColor" id="ledColor" style="background-color: #fff; color: #000; border: 1px solid #000; padding: 2px; font-size: 14px;">
+          <option value="red" style="color: black">Red</option>
+          <option value="green" style="color: black">Green</option>
+          <option value="blue" style="color: black">Blue</option>
+          <option value="yellow" style="color: black;">Yellow</option>
+        </select>
+        <span>try:</span>
+        <span>GPIO.output(LED_PIN, GPIO.HIGH)</span>
+        <span>time.sleep( <input name="blinkTime" type="number" id="blinkTime" placeholder="Enter Sleep Time (seconds)"> )</span>
+        <span>GPIO.output(LED_PIN, GPIO.LOW)</span>
+        <span>time.sleep( <input name="waitTime" type="number" id="waitTime" placeholder="Enter Sleep Time (seconds)">)</span>
+        <span>except KeyboardInterrupt:</span>
+        <span>GPIO.cleanup()</span>
+        
+        <button id="codeSubmit" class="btn btn-primary">Submit</button>
+      </pre>
+    </div>
 
     <!-- Error Box -->
     <div
