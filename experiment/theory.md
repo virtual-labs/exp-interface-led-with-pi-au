@@ -16,11 +16,11 @@ The Raspberry Pi is a versatile single-board computer widely used by engineers, 
 
 2. **LED (Light Emitting Diode)**
    An LED is a semiconductor device that emits light when an electric current flows through it. It has two legs: the anode (longer leg, positive) and the cathode (shorter leg, negative). In this experiment, the LED blinks to visually indicate GPIO state changes. LEDs come in various colors (e.g., red, green, blue), but any color works here as the principle remains the same.
-  <div><img src="./images/leds.png" alt="re-entrance" width='60%'></div>
+  <div><img src="./images/leds.png" alt="re-entrance" width='30%'></div>
 
 3. **Resistor (330 Ω to 1 kΩ)**
    A resistor limits current flow to protect the LED and GPIO pin from damage. Without it, excessive current could burn out the LED or overload the Raspberry Pi’s 15mA per-pin limit. A value between 330 Ω and 1 kΩ is chosen to balance brightness and safety, based on the LED’s forward voltage (typically 2V) and the 3.3V GPIO output.
-   <div><img src="./images/pin.png" alt="re-entrance" width='60%'></div>
+   <div><img src="./images/pin.png" alt="re-entrance" width='20%'></div>
 
 
 
