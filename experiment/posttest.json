@@ -2,69 +2,69 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "What could happen if a resistor is not used in the circuit?",
+      "question": "What will happen to the LED if the GPIO pin connected to it is set to LOW?",
       "answers": {
-        "a": "Excessive current could damage the Raspberry Pi or burn out the LED",
-        "b": "No impact on the Raspberry Pi or LED, even if excessive current is passed",
-        "c": "Over time, the Raspberry Pi and LED may cease to function if too much current flows through them",
-        "d": "Excessive current has no effect on the Raspberry Pi, but the LED will stop functioning"
+        "a": "It will turn off because no voltage is applied",
+        "b": "It will blink faster",
+        "c": "It will stay on continuously",
+        "d": "It will change color"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "Which GPIO command is used to set up a pin for use with an LED?",
+      "question": "Why is the resistor value in this experiment chosen between 330 Ω and 1 kΩ?",
       "answers": {
-        "a": "GPIO.output",
-        "b": "GPIO.setmode",
-        "c": "GPIO.setup",
-        "d": "GPIO.output"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "What is the primary function of a GPIO pin on a Raspberry Pi?",
-      "answers": {
-        "a": "To provide power to peripherals",
-        "b": "To send and receive digital signals for controlling devices",
-        "c": "To supply analog signals for sensors",
-        "d": "To connect the Raspberry Pi to external storage"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "Why is it necessary to turn off the Raspberry Pi before connecting hardware?",
-      "answers": {
-        "a": "To avoid damaging the components due to static discharge or short circuits",
-        "b": "To prevent data loss on the Raspberry Pi",
-        "c": "To ensure that the GPIO pins are not sending signals during the connection",
-        "d": "None of the above"
+        "a": "To balance LED brightness and ensure safe current levels",
+        "b": "To make the LED glow dimly",
+        "c": "To prevent the Raspberry Pi from shutting down",
+        "d": "To increase blinking speed"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "How many GPIO pins are available on the Raspberry Pi 3 Model B?",
+      "question": "If the resistor is removed from the circuit, what could happen?",
       "answers": {
-        "a": "40",
-        "b": "26",
-        "c": "17",
-        "d": "8"
+        "a": "Excessive current could damage the LED or GPIO pin",
+        "b": "The LED will blink more brightly and safely",
+        "c": "Nothing will change",
+        "d": "The LED will change color"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In this experiment, the GPIO pin is connected to the LED's anode. Which pin completes the circuit?",
+      "answers": {
+        "a": "The 3.3V pin",
+        "b": "The GND pin",
+        "c": "Another GPIO pin",
+        "d": "The 5V pin"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "What voltage does a GPIO pin output when turning an LED on?",
+      "question": "What is the main purpose of toggling the GPIO pin between HIGH and LOW in this experiment?",
       "answers": {
-        "a": "5V",
-        "b": "3.3V",
-        "c": "0V",
-        "d": "12V"
+        "a": "To create a blinking effect by turning the LED on and off",
+        "b": "To change the LED's color",
+        "c": "To adjust the LED's voltage",
+        "d": "To make the LED brighter"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is it important to use GND as the reference point in the LED circuit?",
+      "answers": {
+        "a": "To complete the electrical circuit for current flow",
+        "b": "To reduce LED brightness",
+        "c": "To supply voltage to the LED",
+        "d": "To prevent static electricity"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
