@@ -10,8 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <title>Raspberry Pi LED Blinking Experiment</title>
-    <script type="module" crossorigin src="js/index-47d1109c.js"></script>
-    <link rel="stylesheet" href="css/index-c9ed8b18.css">
+    <script type="module" crossorigin src="js/index-be2929c4.js"></script>
+    <link rel="stylesheet" href="css/index-011e0ede.css">
   </head>
 
   <body class="drawer drawer-end container-fluid h-full">
@@ -161,34 +161,31 @@
 
     <!-- Coding Area -->
     <div class="drawer-side">
-      <label for="my-drawer-4" class="drawer-overlay"></label>
-      <pre contenteditable="false" spellcheck="false">
-        <span>import time</span>
-        <span>LED_PIN = <input name="ledPin" id="ledPin" placeholder="Enter the connected pin"></span>
-        <span>GPIO.setmode(GPIO.BCM)</span>
-        <span>GPIO.setup(LED_PIN, GPIO.OUT)</span>
-        <span>LED_COLOR = </span><select name="ledColor" id="ledColor" style="background-color: #fff; color: #000; border: 1px solid #000; padding: 2px; font-size: 14px;">
-          <option value="red" style="color: black">Red</option>
-          <option value="green" style="color: black">Green</option>
-          <option value="blue" style="color: black">Blue</option>
-          <option value="yellow" style="color: black;">Yellow</option>
-        </select>
-        <span>try:</span>
-        <span>GPIO.output(LED_PIN, GPIO.HIGH)</span>
-        <span>time.sleep( <input name="blinkTime" type="number" id="blinkTime" placeholder="Enter Sleep Time (seconds)"> )</span>
-        <span>GPIO.output(LED_PIN, GPIO.LOW)</span>
-        <span>time.sleep( <input name="waitTime" type="number" id="waitTime" placeholder="Enter Sleep Time (seconds)">)</span>
-        <span>except KeyboardInterrupt:</span>
-        <span>GPIO.cleanup()</span>
-       <div class="flex justify-start space-x-4 mt-4">
-  <button id="backButton" class="btn btn-secondary">Back</button>
-  <button id="codeSubmit" class="btn btn-primary">Submit</button>
-</div>
-
-        
-
-      </pre>
+  <label for="my-drawer-4" class="drawer-overlay"></label>
+  <pre contenteditable="false" spellcheck="false">
+    <span>import time</span>
+    <span>LED_PIN = <input name="ledPin" id="ledPin" placeholder="Enter the connected pin"></span>
+    <span>GPIO.setmode(GPIO.BCM)</span>
+    <span>GPIO.setup(LED_PIN, GPIO.OUT)</span>
+    <span>LED_COLOR = </span><select name="ledColor" id="ledColor" style="background-color: #fff; color: #000; border: 1px solid #000; padding: 2px; font-size: 14px;">
+      <option value="red" style="color: black">Red</option>
+      <option value="green" style="color: black">Green</option>
+      <option value="blue" style="color: black">Blue</option>
+      <option value="yellow" style="color: black;">Yellow</option>
+    </select>
+    <span>try:</span>
+    <span>GPIO.output(LED_PIN, GPIO.HIGH)</span>
+    <span>time.sleep( <input name="blinkTime" type="number" id="blinkTime" placeholder="Enter Sleep Time (seconds)"> )</span>
+    <span>GPIO.output(LED_PIN, GPIO.LOW)</span>
+    <span>time.sleep( <input name="waitTime" type="number" id="waitTime" placeholder="Enter Sleep Time (seconds)">)</span>
+    <span>except KeyboardInterrupt:</span>
+    <span>GPIO.cleanup()</span>
+    <div class="flex justify-start flex-wrap gap-4 mt-4">
+      <button id="backButton" class="btn btn-secondary">Back</button>
+      <button id="codeSubmit" class="btn btn-primary">Submit</button>
     </div>
+  </pre>
+</div>
 
     <!-- Error Box -->
     <div
