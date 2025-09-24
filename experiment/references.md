@@ -1,15 +1,7 @@
-### REFERENCES 
-
-https://en.wikipedia.org/wiki/Raspberry_Pi
-
-https://learn.sparkfun.com/tutorials/introduction-to-the-raspberry-pi-gpio-and-physical-computing/gpio-pins-overview
-
-https://roboticsbackend.com/raspberry-pi-control-led-python-3/
-
-https://www.circuitbasics.com/how-to-control-led-using-raspberry-pi-and-python/
-
-https://circuitdigest.com/microcontroller-projects/raspberry-pi-led-blinking
-
-https://www.electronicshub.org/how-to-blink-an-led-using-raspberry-pi-and-python/
-
-https://iot4beginners.com/how-to-make-an-led-blink-with-raspberry-pi/
+1. [Raspberry Pi - Wikipedia](https://en.wikipedia.org/wiki/Raspberry_Pi)  
+2. [Introduction to the Raspberry Pi GPIO and Physical Computing - SparkFun](https://learn.sparkfun.com/tutorials/introduction-to-the-raspberry-pi-gpio-and-physical-computing/gpio-pins-overview)  
+3. [Raspberry Pi Control LED with Python 3 - Robotics Backend](https://roboticsbackend.com/raspberry-pi-control-led-python-3/)  
+4. [How to Control LED Using Raspberry Pi and Python - Circuit Basics](https://www.circuitbasics.com/how-to-control-led-using-raspberry-pi-and-python/)  
+5. [Raspberry Pi LED Blinking - Circuit Digest](https://circuitdigest.com/microcontroller-projects/raspberry-pi-led-blinking)  
+6. [How to Blink an LED Using Raspberry Pi and Python - Electronics Hub](https://www.electronicshub.org/how-to-blink-an-led-using-raspberry-pi-and-python/)  
+7. [How to Make an LED Blink with Raspberry Pi - IoT4Beginners](https://iot4beginners.com/how-to-make-an-led-blink-with-raspberry-pi/)  

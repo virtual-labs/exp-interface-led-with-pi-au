@@ -1,4 +1,3 @@
-### Procedure
 
 #### Hardware Setup
 1. Identify the two pins of the LED:  
@@ -9,7 +8,7 @@
 4. Attach one end of a resistor to the same line as the positive LED terminal.  
 5. Connect the other end of the resistor to a **GPIO pin** on the Raspberry Pi (e.g., GPIO17).  
 
-   <div><img src="./images/diagram.jpeg" alt="re-entrance" width='60%'></div>
+   <div><img src="./images/diagram.jpeg" alt="re-entrance" width='30%'></div>
 
 #### Software Setup
 

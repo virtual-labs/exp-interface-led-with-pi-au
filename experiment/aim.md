@@ -1,4 +1,3 @@
-### Aim of the Experiment
 
 The objective of this experiment is to interface an LED with a Raspberry Pi and develop a Python program that controls the LED's state. Specifically, the program will turn the LED ON for a duration of 1 second, followed by turning it OFF for 2 seconds, repeating this cycle indefinitely. This task will help in understanding the basic functionality of the General Purpose Input/Output (GPIO) pins on the Raspberry Pi and how to control external hardware via programming.
 
