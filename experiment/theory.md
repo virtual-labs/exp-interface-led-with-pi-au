@@ -1,4 +1,3 @@
-### Theory
 
 #### Introduction
 The Raspberry Pi is a versatile single-board computer widely used by engineers, hobbyists, and developers for learning and prototyping embedded systems. One of its standout features is the General Purpose Input/Output (GPIO) pins, which allow it to interface with external hardware like LEDs, sensors, and motors. This experiment introduces GPIO functionality by creating a simple circuit to blink an LED on and off every two seconds. Using a Python program, the GPIO pin toggles between HIGH (3.3V) and LOW (0V) states, demonstrating basic control and laying the groundwork for more complex projects such as IoT systems or sensor networks. The setup process also emphasizes safety, requiring the Raspberry Pi to be powered off during hardware assembly to avoid damage from electrostatic discharge (ESD) or incorrect connections.
