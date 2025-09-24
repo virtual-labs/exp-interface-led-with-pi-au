@@ -4,7 +4,7 @@
 <b>Discipline | <b>Computer Science and Engineering
 :--|:--|
 <b> Lab | <b> Internet of Things (IoT) 
-<b> Experiment|     <b> To interface LED with Raspberry Pi 
+<b> Experiment|     <b> Raspberry Pi LED Blink Program
 
 ### About the Experiment 
 
