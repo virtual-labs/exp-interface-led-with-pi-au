@@ -2,37 +2,69 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What will happen to the LED if the GPIO pin connected to it is set to LOW?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "It will turn off because no voltage is applied",
+        "b": "It will blink faster",
+        "c": "It will stay on continuously",
+        "d": "It will change color"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Why is the resistor value in this experiment chosen between 330 Ω and 1 kΩ?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To balance LED brightness and ensure safe current levels",
+        "b": "To make the LED glow dimly",
+        "c": "To prevent the Raspberry Pi from shutting down",
+        "d": "To increase blinking speed"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If the resistor is removed from the circuit, what could happen?",
+      "answers": {
+        "a": "Excessive current could damage the LED or GPIO pin",
+        "b": "The LED will blink more brightly and safely",
+        "c": "Nothing will change",
+        "d": "The LED will change color"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In this experiment, the GPIO pin is connected to the LED's anode. Which pin completes the circuit?",
+      "answers": {
+        "a": "The 3.3V pin",
+        "b": "The GND pin",
+        "c": "Another GPIO pin",
+        "d": "The 5V pin"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the main purpose of toggling the GPIO pin between HIGH and LOW in this experiment?",
+      "answers": {
+        "a": "To create a blinking effect by turning the LED on and off",
+        "b": "To change the LED's color",
+        "c": "To adjust the LED's voltage",
+        "d": "To make the LED brighter"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why is it important to use GND as the reference point in the LED circuit?",
+      "answers": {
+        "a": "To complete the electrical circuit for current flow",
+        "b": "To reduce LED brightness",
+        "c": "To supply voltage to the LED",
+        "d": "To prevent static electricity"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

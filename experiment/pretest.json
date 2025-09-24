@@ -2,37 +2,69 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Why is a resistor connected in series with the LED in this experiment?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "To limit the current and protect the LED and GPIO pin",
+        "b": "To make the LED blink faster",
+        "c": "To reduce the voltage from 5V to 3.3V",
+        "d": "To prevent reverse polarity"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Where should the LED’s cathode be connected according to the experiment's design?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To a GPIO pin",
+        "b": "To the GND pin",
+        "c": "To the 3.3V pin",
+        "d": "To a resistor"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the typical forward voltage of an LED used in this experiment?",
+      "answers": {
+        "a": "3.3V",
+        "b": "2V",
+        "c": "5V",
+        "d": "1.2V"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What voltage is output from the GPIO pin when it is set to HIGH in this experiment?",
+      "answers": {
+        "a": "5V",
+        "b": "3.3V",
+        "c": "0V",
+        "d": "1.5V"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Why should the Raspberry Pi be powered off before connecting the LED circuit?",
+      "answers": {
+        "a": "To avoid damage from electrostatic discharge or incorrect connections",
+        "b": "To save power during assembly",
+        "c": "To allow the LED to cool down",
+        "d": "To avoid shorting the USB port"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In this experiment, which component ensures the LED does not draw more than the safe current limit of the GPIO pin?",
+      "answers": {
+        "a": "The resistor",
+        "b": "The breadboard",
+        "c": "The Python code",
+        "d": "The GND pin"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
