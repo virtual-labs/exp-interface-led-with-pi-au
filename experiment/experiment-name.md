@@ -1,1 +1,1 @@
-## Raspberry Pi LED Blink Program
+## Interfacing an LED with Raspberry Pi
